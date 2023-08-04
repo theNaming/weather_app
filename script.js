@@ -6,6 +6,7 @@ const root = document.getElementById('root');
 const city = document.getElementById('city');
 const textInput = document.getElementById('text-input');
 const form = document.getElementById('form');
+const close = document.getElementById('close');
 
 let store = {
     city: 'Mogilev',
@@ -189,7 +190,12 @@ const handleSubmit = (e) => {
 
 };
 
+const handleClose = () => {
+    popup.classList.remove('active');
+};
+
 form.addEventListener('submit', handleSubmit);
 textInput.addEventListener('input', handleInput);
+close.addEventListener('click', handleClose);
 
 fetchData();

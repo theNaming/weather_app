@@ -54,6 +54,12 @@ img {
   cursor: pointer;
   width: 22px;
   height: 22px;
+  transition: transform .4s;
+}
+
+.popup-close:hover {
+  transform: rotate(1turn);
+  transition: 0.4s;
 }
 
 .popup-close span {
